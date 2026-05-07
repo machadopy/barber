@@ -1,0 +1,9 @@
+services:
+  barber_page:
+    image: nginx:alpine
+    container_name: barber_container
+    restart: always
+    ports:
+      - "8082:80"
+    volumes:
+      - .:/usr/share/nginx/html
